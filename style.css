@@ -1,0 +1,58 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #001f3f !important; /* Navy blue */
+}
+
+.text-primary {
+  color: #001f3f !important;
+}
+
+.btn-primary {
+  background-color: #001f3f;
+  border-color: #001f3f;
+}
+
+.btn-outline-primary {
+  color: #001f3f;
+  border-color: #001f3f;
+}
+
+.btn-outline-primary:hover {
+  background-color: #001f3f;
+  color: white;
+}
+@keyframes floatLeftRight {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(15px); }
+  100% { transform: translateX(0); }
+}
+
+#floating-name {
+  animation: floatLeftRight 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes floatAndColor {
+  0% {
+    transform: translateX(0);
+    color: #001f3f; /* navy blue */
+  }
+  50% {
+    transform: translateX(15px);
+    color: #00aaff; /* light blue */
+  }
+  100% {
+    transform: translateX(0);
+    color: #001f3f;
+  }
+}
+
+#floating-name {
+  animation: floatAndColor 3s ease-in-out infinite;
+  display: inline-block;
+}
