@@ -1,55 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>[Your Name] Portfolio</title>
-  <link rel="stylesheet" href="pfstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yeki Bulakali Elie | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .nav-link {
+      color: #cbd5e1 !important;
+    }
+    .nav-link:hover {
+      color: #38bdf8 !important;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+    .card {
+      background-color: #1e293b;
+      border: none;
+    }
+    .btn-custom {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+    .btn-custom:hover {
+      background-color: #0ea5e9;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Hello, I'm [Your Name]</h1>
-    <p>Front-End Developer</p>
-    <nav>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Elie Bulakali</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center py-5">
+    <h1 class="text-4xl font-bold">Yeki Bulakali Elie</h1>
+    <p class="text-xl">Front-End Developer | IT Support Engineer</p>
+    <p>Kigali, Rwanda | +250 788 897 032 | Bulmanelie24@gmail.com</p>
+    <a href="/path/to/cv.pdf" class="btn btn-custom mt-3" download>Download CV</a>
   </header>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects-container">
-      <!-- Project cards go here -->
-    </div>
+  <section id="about" class="container text-center">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Versatile and driven Front-End Developer with a background in IT support, digital marketing, and customer service. Proficient in HTML, CSS, JavaScript, Next.js, Angular and React. Bilingual in English and French.
+    </p>
   </section>
 
-  <section id="skills">
-    <h2>My Skills</h2>
-    <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <!-- Add more based on your level -->
+  <section id="skills" class="container text-center">
+    <h2 class="section-title">Skills</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item bg-transparent text-white">HTML, CSS, JavaScript, React, Bootstrap, Tailwind</li>
+      <li class="list-group-item bg-transparent text-white">Git, GitHub, Figma, VS Code, REST APIs, Azure</li>
+      <li class="list-group-item bg-transparent text-white">IT Support, PowerShell, Troubleshooting, Networking</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Your email" required>
-      <textarea placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
+  <section id="projects" class="container text-center">
+    <h2 class="section-title">Projects</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <h3>Personal Portfolio Website</h3>
+          <p>Developed a responsive portfolio website showcasing front-end skills.</p>
+          <p><strong>Technologies:</strong> HTML5, CSS, Bootstrap5, React, Tailwind</p>
+          <a href="https://eliebulakali.github.io/my-portfolio/" class="btn btn-custom" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <h3>ART COFFEE</h3>
+          <p>Website for a coffee shop aiming for digital presence (pending deployment).</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+          <span class="badge bg-warning">On Going</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container text-center mb-5">
+    <h2 class="section-title">Contact</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-custom">Send</button>
     </form>
   </section>
 
-  <footer>
-    <p>© 2025 [Your Name]. All rights reserved.</p>
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2025 Yeki Bulakali Elie. All rights reserved.</p>
+    <p>
+      <a href="https://github.com/ElieBulakali" class="text-white me-3">GitHub</a>
+      <a href="https://www.linkedin.com/in/yeki-bulakali-elie-4950b7236/" class="text-white">LinkedIn</a>
+    </p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
